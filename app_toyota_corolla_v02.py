@@ -2,9 +2,9 @@ import pandas as pd
 
 import streamlit as st
 #from streamlit_echarts import st_echarts
-from codigo_de_ejecucion_toyota_corolla_v01 import *
+from codigo_de_ejecucion_toyota_corolla_v02 import *
 import numpy as np
-import pickle
+import cloudpickle
 
 #Automcompletar rápido
 #%config IPCompleter.greedy=True
