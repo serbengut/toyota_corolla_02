@@ -61,12 +61,12 @@ def ejecutar_modelo(df):
    
 
 #df = df[variables_finales]
-    ruta_proyecto = 'C:/Users/HP/Desktop/Cosas_Sergio/CURSOS/0__Mis_proyectos/Compra-venta coche usado/00_sbg_toyota_corolla'
+    #ruta_proyecto = 'C:/Users/HP/Desktop/Cosas_Sergio/CURSOS/0__Mis_proyectos/Compra-venta coche usado/00_sbg_toyota_corolla'
     nombre_pipe_ejecucion = 'pipe_ejecucion.pickle'
 
-    ruta_pipe_ejecucion = ruta_proyecto + '/04_Modelos/' + nombre_pipe_ejecucion
+    #ruta_pipe_ejecucion = ruta_proyecto + '/04_Modelos/' + nombre_pipe_ejecucion
 
-    with open(ruta_pipe_ejecucion, mode='rb') as file:
+    with open(nombre_pipe_ejecucion, mode='rb') as file:
         pipe_ejecucion = cloudpickle.load(file)
 
     scoring = pipe_ejecucion.predict(df)
