@@ -142,7 +142,8 @@ registro
 
 if st.sidebar.button('CALCULAR PRECIO'):
 
-    precio = ejecutar_modelo(registro)
+    precio = round(float(ejecutar_modelo(registro)),2)
+
     precio
 else:
     st.write('DEFINE LOS PARÁMETROS DEL COCHE Y HAZ CLICK EN CALCULAR PRECIO')
