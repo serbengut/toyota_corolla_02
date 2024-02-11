@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import cloudpickle
+import pickle
 
 #Automcompletar rápido
 #%config IPCompleter.greedy=True
@@ -67,7 +68,7 @@ def ejecutar_modelo(df):
     #ruta_pipe_ejecucion = ruta_proyecto + '/04_Modelos/' + nombre_pipe_ejecucion
 
     with open(nombre_pipe_ejecucion, mode='rb') as file:
-        pipe_ejecucion = cloudpickle.load(file)
+        pipe_ejecucion = pickle.load(file)
 
     scoring = pipe_ejecucion.predict(df)
 

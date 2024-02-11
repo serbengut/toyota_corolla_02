@@ -5,6 +5,7 @@ import streamlit as st
 from codigo_de_ejecucion_toyota_corolla_v02 import *
 import numpy as np
 import cloudpickle
+import pickle
 
 #Automcompletar rápido
 #%config IPCompleter.greedy=True
@@ -144,5 +145,5 @@ if st.sidebar.button('CALCULAR PRECIO'):
     precio = ejecutar_modelo(registro)
     precio
 else:
-    st.write('DEFINE LOS PARÁMETROS DEL PRÉSTAMO Y HAZ CLICK EN CALCULAR RIESGO')
+    st.write('DEFINE LOS PARÁMETROS DEL COCHE Y HAZ CLICK EN CALCULAR PRECIO')
 
